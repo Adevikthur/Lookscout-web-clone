@@ -1,6 +1,7 @@
 :root {
     --blue: #0a77ff;
     --light-blue: #4096ff;
+    --bg-sky-blue: #f8fafc;
     --deep-blue: blue;
     --black: #000;
     --off-black: #1f1f1f;
@@ -420,7 +421,7 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 48px;
-    background-color: #f2f6f7;
+    background-color: var(--bg-sky-blue);
 
     svg {
         width: 16px;
@@ -505,7 +506,6 @@ body {
                     0 4px 12px color-mix(in srgb, var(--light-blue) 5%, transparent);
                 filter: drop-shadow(0 4px 12px rgba(var(--light-blue), 0.2));
                 backdrop-filter: blur(8px);
-
             }
 
             .grid-image {
