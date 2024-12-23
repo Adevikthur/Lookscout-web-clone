@@ -24,6 +24,7 @@ h1 {
   font-weight: 700;
   line-height: 58px;
   letter-spacing: -1.5px;
+  margin: 0;
 }
 
 h2 {
@@ -31,6 +32,7 @@ h2 {
   font-weight: 700;
   line-height: 50px;
   letter-spacing: -1.2px;
+  margin: 0;
 }
 
 h3 {
@@ -38,6 +40,7 @@ h3 {
   font-weight: 600;
   line-height: 42px;
   letter-spacing: -0.8px;
+  margin: 0;
 }
 
 h4 {
@@ -45,6 +48,15 @@ h4 {
   font-weight: 600;
   line-height: 34px;
   letter-spacing: -0.5px;
+  margin: 0;
+}
+
+h5 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: -0.3px;
+  margin: 0;
 }
 
 h6 {
@@ -52,6 +64,7 @@ h6 {
   font-weight: 500;
   line-height: 28px;
   letter-spacing: -0.2px;
+  margin: 0;
 }
 
 .btn {
@@ -629,4 +642,16 @@ body {
   line-height: 20px;
   margin: 0;
   color: var(--text-grey);
+}
+
+.elements {
+  padding: 72px 120px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+  background-color: var(--bg-sky-blue);
+}
+.elements__image img {
+  width: 720px;
 }/*# sourceMappingURL=main.css.map */
