@@ -40,7 +40,7 @@ h2 {
 
 h3 {
     font-size: 32px;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 42px;
     letter-spacing: -0.8px;
     margin: 0;
@@ -138,7 +138,7 @@ body {
     z-index: 1000;
 
     &__logo {
-        width: 160px;
+        width: 180px;
     }
 
     &__center {
@@ -766,17 +766,101 @@ body {
     }
 }
 
-.elements{
+.elements {
     padding: 72px 120px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 40px;
+    
+    gap: 48px;
     background-color: var(--bg-sky-blue);
 
-    &__image{
-        img{
-            width: 720px;
+    &__image {
+        img {
+            width: 640px;
+
+        }
+    }
+
+    &__side {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+
+        .text-holder {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            text-align: left;
+
+            p:first-of-type {
+                text-transform: uppercase;
+                color: var(--blue);
+                font-weight: 700;
+                font-size: 14px;
+                letter-spacing: 0.5px;
+                margin: 0;
+            }
+
+            h3 {
+                font-weight: 700;
+                font-size: 40px;
+                line-height: 48px;
+                margin: 0;
+            }
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+
+            &__item {
+                display: flex;
+                flex-direction: row;
+                gap: 16px;
+                &:hover{
+                    cursor: pointer;
+                }
+
+                .line {
+                    width: 6px;
+                    height: auto;
+                    background-color: var(--grey);
+                    border-radius: 32px;
+
+                    &--1 {
+                        background-color: var(--blue);
+                        width: 6px;
+                        height: auto;
+                        border-radius: 32px;
+
+                    }
+                }
+
+
+                .text {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+
+
+                    h5 {
+                        font-weight: 600;
+                        font-size: 20px;
+                        line-height: 32px;
+                        margin: 0;
+                        color: var(--black)
+                    }
+
+                    p {
+                        font-size: 18px;
+                        line-height: 24px;
+                        margin: 0;
+                        color: var(--text-grey)
+                    }
+                }
+            }
 
         }
     }
