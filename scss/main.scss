@@ -1427,6 +1427,7 @@ body {
                     }
 
                     object {
+                        opacity: 70%;
                         width: 70%;
                         max-height: 100%;
                         border-radius: 8px;
@@ -1532,5 +1533,41 @@ body {
 
     }
 
+    &__text-grid {
+        width: 100%;
+        display: grid;
+        flex-direction: row;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: space-between;
+        padding: 32px 0;
 
+        .text-holder {
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+            gap: 8px;
+            color: var(--white);
+            z-index: 2;
+
+            h1,
+            p {
+                color: white;
+            }
+
+            h1 {
+                font-size: 64px;
+                line-height: 72px;
+                margin: 0;
+            }
+
+            p {
+                font-size: 18px;
+                line-height: 24px;
+                margin: 0;
+                color: var(--off-white);
+
+            }
+        }
+
+    }
 }

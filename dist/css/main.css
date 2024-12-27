@@ -1173,6 +1173,7 @@ body {
   left: 440px;
 }
 .why__grid-wrap .why__grid-2 .grid-item--1 object {
+  opacity: 70%;
   width: 70%;
   max-height: 100%;
   border-radius: 8px;
@@ -1258,4 +1259,35 @@ body {
   bottom: 100px;
   left: 50%;
   top: 5%;
+}
+.why__text-grid {
+  width: 100%;
+  display: grid;
+  flex-direction: row;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  padding: 32px 0;
+}
+.why__text-grid .text-holder {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  gap: 8px;
+  color: var(--white);
+  z-index: 2;
+}
+.why__text-grid .text-holder h1,
+.why__text-grid .text-holder p {
+  color: white;
+}
+.why__text-grid .text-holder h1 {
+  font-size: 64px;
+  line-height: 72px;
+  margin: 0;
+}
+.why__text-grid .text-holder p {
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0;
+  color: var(--off-white);
 }/*# sourceMappingURL=main.css.map */
