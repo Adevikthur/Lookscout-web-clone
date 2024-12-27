@@ -1104,8 +1104,8 @@ body {
   opacity: 80%;
   border-radius: 32000;
   z-index: 1;
-  -webkit-mask-image: linear-gradient(to right, transparent, var(--black) 15%, var(--black) 70%, transparent), linear-gradient(to bottom, transparent, var(--black) 15%, var(--black) 70%, transparent);
-  mask-image: linear-gradient(to right, transparent, var(--black) 15%, var(--black) 70%, transparent), linear-gradient(to bottom, transparent, var(--black) 15%, var(--black) 70%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, var(--black) 5%, var(--black) 90%, transparent), linear-gradient(to bottom, transparent, var(--black) 5%, var(--black) 90%, transparent);
+  mask-image: linear-gradient(to right, transparent, var(--black) 5%, var(--black) 90%, transparent), linear-gradient(to bottom, transparent, var(--black) 5%, var(--black) 90%, transparent);
   -webkit-mask-composite: source-in;
   mask-composite: intersect;
 }
@@ -1290,4 +1290,53 @@ body {
   line-height: 24px;
   margin: 0;
   color: var(--off-white);
+}
+.why__cta {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  z-index: 2;
+}
+.why__cta .btn {
+  font-size: 12px;
+  gap: 8px;
+}
+.why__cta .btn--primary {
+  background-color: var(--white);
+  color: var(--black);
+}
+.why__cta .btn svg {
+  width: 16px;
+}
+.why__cta .btn object {
+  width: 16px;
+}
+
+.banner-2 {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--bg-sky-blue);
+  padding: 24px 120px;
+  align-items: center;
+  justify-content: space-between;
+}
+.banner-2 svg {
+  width: 16px;
+}
+.banner-2 .text-holder {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  align-items: center;
+}
+.banner-2 .text-holder h6 {
+  color: var(--blue);
+  font-size: 20px;
+  font-weight: 600;
+}
+.banner-2 .text-holder p {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--pill-grey);
+  line-height: 24px;
 }/*# sourceMappingURL=main.css.map */
