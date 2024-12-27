@@ -1339,4 +1339,62 @@ body {
   font-weight: 500;
   color: var(--pill-grey);
   line-height: 24px;
+}
+
+.tested {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+.tested__text-holder {
+  z-index: 8;
+  display: flex;
+  flex-direction: column;
+  color: var(--black);
+  gap: 8px;
+  text-align: center;
+  max-width: 630px;
+  padding: 40px 0;
+}
+.tested__text-holder p:first-of-type {
+  text-transform: uppercase;
+  color: var(--blue);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+.tested__text-holder h4,
+.tested__text-holder p {
+  text-align: center;
+  color: var(--black);
+}
+.tested__text-holder h4 {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48px;
+  margin: 0;
+}
+.tested__text-holder p {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  margin: 0;
+  color: var(--text-grey);
+}
+.tested__img-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 3fr);
+  padding: 72px 100px;
+  gap: 16px;
+  padding: 24px;
+  position: absolute;
+  top: 200px;
+  left: 72px;
+}
+.tested__img-grid img {
+  width: 400px;
+  height: 100%;
+  border-radius: 8px;
 }/*# sourceMappingURL=main.css.map */
