@@ -21,6 +21,10 @@
 }
 
 // TEXT STYLES
+html {
+    scroll-behavior: smooth;
+
+}
 
 h1 {
     font-size: 48px;
@@ -121,6 +125,8 @@ h6 {
 body {
     margin: 0%;
     overflow-x: hidden;
+
+
 }
 
 
@@ -131,14 +137,24 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 24px 80px;
+    padding: 16px 80px;
     background-color: var(--black);
     position: sticky;
     top: 0;
     z-index: 1000;
 
+    a {
+        color: white;
+        text-decoration: none;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
     &__logo {
         width: 120px;
+        height: auto;
     }
 
     &__center {
@@ -151,11 +167,11 @@ body {
         justify-self: center;
 
 
-        p {
+        a {
             &:hover {
                 cursor: pointer;
                 color: var(--white);
-                font-weight: 500;
+                font-weight: 600;
             }
         }
 
@@ -1634,8 +1650,10 @@ body {
     position: relative;
     display: flex;
     flex-direction: column;
+    height: 150vh;
     gap: 40px;
     align-items: center;
+    overflow: hidden;
 
     &__text-holder {
         z-index: 8;
@@ -1689,10 +1707,64 @@ body {
         top: 200px;
         left: 72px;
 
-        img{
+        img {
             width: 400px;
             height: 100%;
             border-radius: 8px;
         }
     }
+}
+
+.testimonials {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-sky-blue);
+    padding: 72px 100px;
+    align-items: center;
+    gap: 40px;
+
+    &__text-holder {
+        z-index: 8;
+        display: flex;
+        flex-direction: column;
+        color: var(--black);
+        gap: 8px;
+        text-align: center;
+        max-width: 630px;
+        padding: 40px 0;
+
+
+        p:first-of-type {
+            text-transform: uppercase;
+            color: var(--blue);
+            font-weight: 700;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+
+        }
+
+        h4,
+        p {
+            text-align: center;
+            color: var(--black);
+        }
+
+        h4 {
+            font-weight: 600;
+            font-size: 40px;
+            line-height: 48px;
+            margin: 0;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 24px;
+            opacity: 1;
+            letter-spacing: 0.5px;
+            margin: 0;
+            color: var(--text-grey);
+        }
+    }
+
 }
