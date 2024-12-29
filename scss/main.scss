@@ -77,6 +77,9 @@ h6 {
     margin: 0;
 }
 
+p {
+    margin: 0;
+}
 
 
 // BUTTON
@@ -90,6 +93,7 @@ h6 {
     flex-direction: row;
     gap: 8px;
     align-items: center;
+    text-align: center;
     font-weight: 600;
     font-size: 14px;
 
@@ -1909,5 +1913,129 @@ body {
         grid-template-columns: repeat(3, 1fr);
         justify-content: space-between;
         gap: 16px;
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            padding: 24px;
+            border: #e9e9e9 solid 0.5px;
+            border-radius: 16px;
+            // background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 1px 3px rgba(204, 205, 209, 0.1);
+
+            /* Solid halo-like shadow */
+            &:nth-of-type(2) {
+                border: var(--light-blue) solid 0.5px;
+
+                box-shadow: 0 0 2px 4px rgba(10, 119, 255, 0.2);
+            }
+
+            .top {
+
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+
+                &__logo-holder {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    gap: 8px;
+
+                    .svg-holder {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+
+                        img {
+                            width: 32px;
+                        }
+                    }
+
+                    .btn {
+                        background-color: var(--bg-sky-blue);
+                        color: var(--blue);
+                        border: none;
+                        width: fit-content;
+                        font-size: 12px;
+                    }
+
+                }
+
+                &__text-header {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+
+                    h6,
+                    h1 {
+                        margin: 0;
+                    }
+
+                    h6 {
+                        font-size: 20px;
+                        font-weight: 600;
+                        color: var(--blue);
+                    }
+                }
+
+                &__text {
+                    font-size: 18px;
+                    color: var(--text-grey);
+
+                }
+            }
+
+            .line {
+                width: 100%;
+                height: 0.5px;
+                background-color: var(--grey);
+                color: var(--grey-2);
+            }
+
+            .list {
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+
+                u:hover {
+                    cursor: pointer;
+                }
+
+                &__item {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 8px;
+                    align-items: center;
+
+                    svg {
+                        width: 32px;
+                        fill: var(--blue);
+                        stroke: var(--blue);
+
+
+                    }
+
+                    .grey {
+                        fill: var(--text-grey);
+                        stroke: var(--text-grey);
+                        opacity: 60%;
+                    }
+
+                    p {
+                        font-size: 18px;
+                    }
+                }
+            }
+
+            .btn {
+                padding: 16px auto;
+                width: 100%;
+                justify-content: center;
+            }
+        }
     }
+
+
 }
