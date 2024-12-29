@@ -1,6 +1,6 @@
 :root {
   --blue: #0a77ff;
-  --hover-blue:#0264db;
+  --hover-blue: #0264db;
   --light-blue: #4096ff;
   --bg-sky-blue: #f8fafc;
   --deep-blue: blue;
@@ -1524,4 +1524,48 @@ body {
 .testimonials__grid .grid-item__info .text-holder p {
   color: var(--text-grey);
   margin: 0;
+}
+
+.pricing {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  padding: 72px 100px;
+  align-items: center;
+  gap: 40px;
+}
+.pricing__text-holder {
+  z-index: 8;
+  display: flex;
+  flex-direction: column;
+  color: var(--black);
+  gap: 8px;
+  text-align: center;
+  padding: 40px 0;
+}
+.pricing__text-holder p:first-of-type {
+  color: var(--blue);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+.pricing__text-holder h4,
+.pricing__text-holder p {
+  text-align: center;
+  color: var(--black);
+}
+.pricing__text-holder h4 {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48px;
+  margin: 0;
+}
+.pricing__text-holder p {
+  font-size: 16px;
+  line-height: 24px;
+  opacity: 1;
+  letter-spacing: 0.5px;
+  margin: 0;
+  color: var(--text-grey);
 }/*# sourceMappingURL=main.css.map */
