@@ -1775,4 +1775,86 @@ body {
 }
 .faq__grid .grid-item--span-row .btn--secondary:hover {
   background-color: var(--off-white);
+}
+
+.final-cta {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--blue);
+  padding: 72px 120px;
+  align-items: center;
+  gap: 40px;
+  overflow: hidden;
+}
+.final-cta__logo {
+  justify-self: center;
+  padding: 8px;
+  border: var(--white) 1px solid;
+  border-radius: 8px;
+}
+.final-cta__logo object {
+  color: white;
+  width: 40px;
+}
+.final-cta__text-holder {
+  z-index: 8;
+  display: flex;
+  flex-direction: column;
+  color: var(--black);
+  gap: 8px;
+  text-align: center;
+}
+.final-cta__text-holder h2,
+.final-cta__text-holder p {
+  text-align: center;
+  color: var(--white);
+}
+.final-cta__text-holder h2 {
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 64px;
+  margin: 0;
+}
+.final-cta__text-holder p {
+  font-size: 16px;
+  line-height: 24px;
+  opacity: 1;
+  letter-spacing: 0.5px;
+  margin: 0;
+  color: var(--off-white);
+}
+.final-cta__cta {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  z-index: 2;
+}
+.final-cta__cta .btn {
+  font-size: 12px;
+  gap: 8px;
+}
+.final-cta__cta .btn--primary {
+  background-color: var(--white);
+  color: var(--black);
+}
+.final-cta__cta .btn svg {
+  width: 16px;
+}
+.final-cta__cta .btn object {
+  width: 16px;
+}
+.final-cta__outline-1 {
+  position: absolute;
+  width: 700px;
+  opacity: 0.3;
+  right: -300px;
+  top: -450px;
+}
+.final-cta__outline-2 {
+  position: absolute;
+  width: 700px;
+  opacity: 0.3;
+  left: -300px;
+  bottom: -450px;
 }/*# sourceMappingURL=main.css.map */
