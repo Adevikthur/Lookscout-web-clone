@@ -1532,7 +1532,7 @@ body {
   flex-direction: column;
   background-color: var(--white);
   padding: 72px 100px;
-  align-items: center;
+  justify-content: center;
   gap: 40px;
 }
 .pricing__text-holder {
@@ -1547,8 +1547,9 @@ body {
 .pricing__text-holder p:first-of-type {
   color: var(--blue);
   font-weight: 700;
-  font-size: 14px;
+  font-size: 16px;
   letter-spacing: 0.5px;
+  margin: 0;
 }
 .pricing__text-holder h4,
 .pricing__text-holder p {
@@ -1568,4 +1569,12 @@ body {
   letter-spacing: 0.5px;
   margin: 0;
   color: var(--text-grey);
+}
+.pricing__cards {
+  width: 100%;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  gap: 16px;
 }/*# sourceMappingURL=main.css.map */
