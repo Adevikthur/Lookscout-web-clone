@@ -2384,8 +2384,10 @@ body {
                         font-weight: 600;
 
                         &:hover {
+                            font-weight: 700;
                             cursor: pointer;
                             color: var(--off-white);
+                            transition: linear .2s;
                         }
 
                     }

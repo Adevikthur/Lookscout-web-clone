@@ -1976,6 +1976,8 @@ body {
   font-weight: 600;
 }
 .footer__wrapper__right .grid-item .list p:hover {
+  font-weight: 700;
   cursor: pointer;
   color: var(--off-white);
+  transition: linear 0.2s;
 }/*# sourceMappingURL=main.css.map */
