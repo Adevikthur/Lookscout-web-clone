@@ -8,7 +8,7 @@ You can access the live link to this project here: <strong>https://lookscout-clo
 
 - SCSS (SASS CSS)
 
-![tesla_src](https://github.com/Adevikthur/Lookscout-web-clone/blob/7cc678bdf95fe9a2078398205c8f061ed7d49829/lookscout_src.jpeg)
+![lookscout_src](https://github.com/Adevikthur/Lookscout-web-clone/blob/7cc678bdf95fe9a2078398205c8f061ed7d49829/lookscout_src.jpeg)
 
 <h3>How to Run Locally</h3>
 1. Clone the repository: 
